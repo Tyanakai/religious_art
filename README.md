@@ -83,15 +83,14 @@
 ## ipynbの概要
 1. [religious_art_eda.ipynb](religious_art_eda.ipynb) : データを分析し、重複がないか調べるためクラスタ分析した画像を保存します。
 2. [religious_art_train.ipynb](religious_art_train.ipynb) : モデルを訓練し、保存します。3.が完了している場合、擬似ラベルを使った訓練も選択できます。
-3. [religious_art_infere.ipynb](religious_art_infere.ipynb) : 2.で保存したモデルを用いて、out of fold 訓練データとテストデータに対して予測を行います。<br>
-また、アンサンブル手法、擬似ラベル作成も行います。
+3. [religious_art_infere.ipynb](religious_art_infere.ipynb) : 2.で保存したモデルを用いて、out of fold 訓練データとテストデータに対して予測を行います。また、アンサンブル手法、擬似ラベル作成も行います。
 
 ## 実行環境
 Google colabratoryでの実行を想定しています。
 
 ## 試行錯誤
 ### RandAugment
-データ拡張法として、[RandAugment](https://arxiv.org/abs/1909.13719)を実装、試行しました。<br>
+データ拡張法として、[RandAugment](https://arxiv.org/abs/1909.13719)をtensorflow.data.Datasetで実装、試行しました。<br>
 実装に当っては、[こちらの記事](https://qiita.com/kitfactory/items/d89457eeab5c185880be)を一部参考にさせて頂きました。
 
 ### image clustering
